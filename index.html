@@ -6,6 +6,11 @@
     <meta name="description" content="Jason Liao-Zeng">
     <title>Personal Webpage| Jason Liao-Zeng</title>
     <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
         img.profile {
             width: 300px;
             border-radius: 150px;
@@ -51,6 +56,25 @@
             margin-right: 10px;
             color:wheat;
         }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            word-wrap: break-word;
+        }
+
+        video{
+            float: center;
+            width: 95%;
+            margin-top: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
         
     </style>
 </head>
@@ -74,7 +98,88 @@
 
     </p>
 
+    <hr>
+
+    <h2 style="color: white; text-align: center;"> Project Displays</h2>
+
+    <div class="row">
+        <div class = "column">
+            <video controls >
+                <source src = "video/Calculator.MP4" type="video/mp4">
+                mp4 not supported on current brower
+            </video>
+        </div>
+        <div class = column>
+           <h3 style="color: white "> <u>Spicy-Chicken Calculator</u></h3>
+           <p class="mywords">-an android app where users input numbers and operators by clicking and outputs the result of the calculation if the input is valid. <br><br>
+                -built from scratch using java and android studio built-in functions. 
+           </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class = "column">
+            <h3 style="color: white "> <u>Jump61</u></h3>
+            <p class="mywords">-a 2 players pure logical game. <br> 
+                Reference to the rules of Jump61: 
+                <a style="color: wheat;" href="https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj2/index.html#rules-of-jump61">
+                    https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj2/index.html#rules-of-jump61
+                </a> <br><br>
+                -built from scratch using java. Includes Implementation of the logic of the game, an AI using alpha-beta-pruning methods, and a basic GUI design which allows the user to visualize and make adjustment to the board.
+            </p>
+        </div>
+        <div class = column>
+           <video controls >
+            <source src = "video/Jump61.mp4" type="video/mp4">
+            mp4 not supported on current brower
+        </video>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class = "column">
+            <video controls >
+                <source src = "video/Gitlet.mp4" type="video/mp4">
+                mp4 not supported on current brower
+            </video>
+        </div>
+        <div class = column>
+           <h3 style="color: white "> <u>Gitlet</u></h3>
+           <p class="mywords">-an version controlled system that is very much like Git, except that it does not handle sub directories. <br> <br>
+               -built from scratch using java and some file reading and writing utilty functions written by school staffs. <br> <br>
+               -Implemented basic Git operations including “init”, “add”, “commit”, “status”, “rm”, “log”, 
+               “global-log”, “find”, “status”, “checkout”, “branch”, “rm-branch”, “reset”, and “merge”.
+           </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class = "column">
+            <h3 style="color: white "> <u>Jump61</u></h3>
+            <p class="mywords">-a simulation of Germany's famous coding machine, Enigma! <br> 
+                Reference to the background and mechanics of Enigma: 
+                <a style="color: wheat;" href="https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj1/index.html#background">
+                    https://inst.eecs.berkeley.edu/~cs61b/fa21/materials/proj/proj1/index.html#background
+                </a> <br><br>
+                -built using java. <br> <br> 
+                -Implemented important class according to given definitions. Those classes includes "alphabet", "permutation","rotor" and its child classes, and "machine". 
+            </p>
+        </div>
+        <div class = column>
+           <video controls >
+            <source src = "video/Enigma.mp4" type="video/mp4">
+            mp4 not supported on current brower
+        </video>
+        </div>
+    </div>
+    <hr>
+    <a href="#">
+        <p style="font-size: x-large; text-align: center; color: white;"> <b>&#x2191</b></p>
+     </a> 
+
     <img src="images/Bear.jpg" class="bot" alt="Image of a bear.">
+    
+    
 </body>
 
 </html>
